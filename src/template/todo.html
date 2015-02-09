@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>todo</title>
+    <style>
+        .todoList .date{color:red;}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <ul class="todoList">
+            <li>
+                <script type="text/template" id="item-tpl">
+                <label for="item">
+                    <input type="checkbox" id="item" />
+                    <span class="title"><%= title %></span>
+                    <span class="date">(left <%= date %>days)</span>
+                </label>
+                <p class="note">
+                    <%= note %>
+                </p>
+                </script>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
